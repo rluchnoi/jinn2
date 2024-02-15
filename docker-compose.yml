@@ -1,0 +1,35 @@
+version: '3.3'
+
+services:
+    nginx:
+        build:
+            context: .
+            dockerfile: docker/Nginx.Dockerfile
+        ports:
+            - "80:80"
+        volumes:
+            - ./:/var/www/html
+        links:
+            - fpm
+    fpm:
+        build:
+            context: .
+            dockerfile: docker/Phpfpm.Dockerfile
+        volumes:
+            - ./:/var/www/html
+        entrypoint:
+            - /bin/sh
+            - /opt/docker-entrypoint.sh
+        extra_hosts:
+            - host.docker.internal:host-gateway
+        links:
+            - mysql
+    mysql:
+        image: mysql:5.7
+        ports:
+            - '${FORWARD_DB_PORT:-3306}:3306'
+        environment:
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+            MYSQL_USER: '${DB_USERNAME}'
+            MYSQL_PASSWORD: ${DB_PASSWORD}
