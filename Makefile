@@ -45,6 +45,9 @@ migrate:
 seed:
 	@$(ARTISAN) db:seed
 
+key-generate:
+	@$(ARTISAN) key:generate
+
 start-expanded: start migrate seed
 
 setup: env build start composer-install

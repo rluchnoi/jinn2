@@ -2,6 +2,8 @@
 2. Change 'storage' folder permissions.
 3. Add '127.0.0.1	jinn2.devs' line to /etc/hosts file (or edit .env APP_URL to localhost or whatever if you don't want to use custom hostname)
 4. Run 'docker compose up -d' ('sudo make start')
-5. Install packages ('sudo make composer-install')
-6. Run migrations & seed
-7. Open 'http://jinn2.devs/' (or other hostname you have selected)
+5. Install php packages ('sudo make composer-install')
+6. Install js packages ('sudo make npm-install && sudo make npm-build')
+7. Run migrations & seed (sudo make migrate && sudo make seed)
+8. Generate key (sudo make key:generate)
+9. Open 'http://jinn2.devs/' (or other hostname you have selected)
