@@ -45,6 +45,12 @@ migrate:
 seed:
 	@$(ARTISAN) db:seed
 
+seed-images:
+	cp -r database/seeders/images/. storage/app/public/images
+
+storage-link:
+	@$(ARTISAN) storage:link
+
 key-generate:
 	@$(ARTISAN) key:generate
 

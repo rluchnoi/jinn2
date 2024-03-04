@@ -1,0 +1,28 @@
+.header {
+    background-color: gray;
+    width: 100%;
+
+    display: flex;
+}
+
+.header div {
+    margin: 20px 30px;
+}
+
+.header div a {
+    color: black;
+
+    font-size: x-large;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 5px solid gold;
+}
+
+.header div a:hover {
+    color: whitesmoke;
+
+    transition: all 0.3s;
+}
