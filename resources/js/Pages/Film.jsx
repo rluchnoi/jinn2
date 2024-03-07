@@ -1,21 +1,65 @@
 import React from 'react';
 import Header from './Header';
+import Hls from 'hls.js';
+import Plyr from 'plyr';
+import 'plyr/dist/plyr.css';
+
+
 import { useEffect } from 'react';
 
-import playerLoader from '../Helpers/playerLoader';
-
-
 const Film = ({ film }) => {
-
     useEffect(() => {
-        playerLoader.then(() => {
-            const file = window.location.origin + '/test.mp4';
+        const video = document.getElementById('player');
+        const source = 'http://jinn2.devs/hls/index.m3u8';
+        const defaultOptions = {};
 
-            let player = new Playerjs({
-               id: 'player',
-               file: file,
+        if (Hls.isSupported()) {
+            const hls = new Hls();
+            hls.loadSource(source);
+            hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+                const availableQualities = hls.levels.map((level) => level.height);
+
+                defaultOptions.controls = [
+                    'play-large',
+                    'restart',
+                    'rewind',
+                    'play',
+                    'fast-forward',
+                    'progress',
+                    'current-time',
+                    'duration',
+                    'mute',
+                    'volume',
+                    'settings',
+                    'pip',
+                    'fullscreen'
+                ],
+
+                defaultOptions.quality = {
+                    default: availableQualities[availableQualities.length - 1],
+                    options: availableQualities,
+                    forced: true,
+                    onChange: (e) => updateQuality(e)
+                }
+
+                new Plyr(video, defaultOptions);
             });
-        });
+
+            hls.attachMedia(video);
+            window.hls = hls;
+
+        } else {
+            console.log('Not supported')
+        }
+
+        function updateQuality(quality) {
+            window.hls.levels.forEach((level, levelIndex) => {
+                if (level.height === quality) {
+                    window.hls.currentLevel = levelIndex;
+                }
+            })
+        }
+
     }, []);
 
     return (
@@ -36,8 +80,11 @@ const Film = ({ film }) => {
                     </div>
                 </div>
 
-                <div id='player' className='player'>
-
+                <div className='player'>
+                    <video
+                        id="player"
+                        controls
+                    ></video>
                 </div>
 
                 
