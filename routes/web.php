@@ -26,4 +26,4 @@ Route::get('/', [LandingController::class, 'index'])->name('landing');
 Route::get('/products', [ProductController::class, 'index'])->name('products');
 Route::get('/films', [FilmController::class, 'index'])->name('films');
 
-Route::get('/films/{film}', [FilmController::class, 'show'])->name('film');
+Route::get('/films/{id}', [FilmController::class, 'show'])->name('film');

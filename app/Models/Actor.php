@@ -3,10 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Film extends Model
+class Actor extends Model
 {
     /**
      * Reserved seeders ids 
@@ -19,22 +18,20 @@ class Film extends Model
     const RESERVED_ID_6 = 6;
     const RESERVED_ID_7 = 7;
     const RESERVED_ID_8 = 8;
+    const RESERVED_ID_9 = 9;
+    const RESERVED_ID_10 = 10;
+    const RESERVED_ID_11 = 11;
+    const RESERVED_ID_12 = 12;
+    const RESERVED_ID_13 = 13;
+    const RESERVED_ID_14 = 14;
+    const RESERVED_ID_15 = 15;
+    const RESERVED_ID_16 = 16;
 
     /**
      * The attributes that are mass assignable.
      */
     protected $fillable = [
         'name',
-        'image',
-        'video',
-        'year'
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     */
-    protected $hidden = [
-        'director_id'
     ];
 
     /**
@@ -43,18 +40,10 @@ class Film extends Model
     public $timestamps = false;
 
     /**
-     * Actors relation
+     * Films relation
      */
-    public function actors(): BelongsToMany
+    public function films(): BelongsToMany
     {
-        return $this->belongsToMany(Actor::class);
-    }
-
-    /**
-     * Director relation
-     */
-    public function director(): BelongsTo
-    {
-        return $this->belongsTo(Director::class);
+        return $this->belongsToMany(Film::class);
     }
 }

@@ -10,7 +10,8 @@ import { useEffect } from 'react';
 const Film = ({ film }) => {
     useEffect(() => {
         const video = document.getElementById('player');
-        const source = 'http://jinn2.devs/hls/index.m3u8';
+        const source = film.video;
+
         const defaultOptions = {};
 
         if (Hls.isSupported()) {
@@ -68,23 +69,38 @@ const Film = ({ film }) => {
 
             <div className='film'>
 
-                <div className='filmInfo'>
-                    <div className='filmImageName'>
+                <div className='firstColumn'>
+                    <div className='firstColumnContentWrapper'>
+
                         <div className='filmImage'>
                             <img src={film.image} alt="Not Found"/>
                         </div>
 
-                        <div className='filmName'>
-                            {film.name}
+                        <div className='filmInfo'>
+                            <div>
+                                Released: {film.year}
+                            </div>
+                            <div>
+                                Director: {film.director.name}
+                            </div>
+                            <div>
+                                Actors: {film.actors.map((actor) => actor.name).join(', ')}
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div className='player'>
-                    <video
-                        id="player"
-                        controls
-                    ></video>
+                <div className='secondColumn'>
+                    <div className='filmName'>
+                        {film.name}
+                    </div>
+
+                    <div className='playerWrapper'>
+                        <video
+                            id="player"
+                            controls
+                        ></video>
+                    </div>
                 </div>
 
                 

@@ -22,8 +22,10 @@ class FilmController extends Controller
     /**
      * Show a film
      */
-    public function show(Film $film): Response
+    public function show(int $id): Response
     {
+        $film = Film::with('actors', 'director')->find($id);
+
         return Inertia::render('Film', [
             'film' => $film
         ]);
