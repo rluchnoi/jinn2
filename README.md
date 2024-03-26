@@ -5,5 +5,6 @@
 5. Install php packages ('sudo make composer-install')
 6. Install js packages ('sudo make npm-install && sudo make npm-build')
 7. Run migrations & seed (sudo make migrate && sudo make seed)
-8. Generate key (sudo make key:generate)
-9. Open 'http://jinn2.devs/' (or other hostname you have selected)
+8. Link the storage (sudo make storage-link)
+9. Generate an app key (sudo make key:generate)
+10. Open 'http://jinn2.devs/' (or other hostname you have selected)

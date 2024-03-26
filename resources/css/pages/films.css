@@ -1,0 +1,123 @@
+:root {
+    --white-main: rgb(200, 200, 200);
+    --gray-main: #353535;
+    --black-main: #1f1f1f;
+}
+
+.filmAligner {
+    display: flex;
+    justify-content: center;
+}
+
+.filmWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #545454;
+
+    height: 100%;
+    width: 80%;
+
+    padding: 20px;
+
+    margin: 300px 20px 20px 20px;
+}
+
+.film {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--black-main);
+    padding: 20px;
+}
+
+
+
+
+
+.firstColumn {
+    background-color: var(--gray-main);
+
+    width: 40%;
+    height: 100%;
+}
+
+.firstColumnContentWrapper {
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.filmName {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bolder;
+
+    margin-bottom: 10px;
+}
+
+.filmImage {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.filmImage img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.filmInfo {
+    font-weight: bolder;
+    color: var(--white-main);
+}
+
+.filmInfo div {
+    padding: 10px;
+}
+
+.filmInfo div:nth-child(2n) {
+    background-color: transparent
+}
+
+.filmInfo div:nth-child(2n+1) {
+    background-color: var(--black-main);
+}
+
+
+.secondColumn {
+    margin-left: 20px;
+    width: 100%;
+
+    display: flex;
+}
+
+.playerWrapper {
+    border-bottom: 5px solid gold;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: start;
+}
+
+#player {
+    width: 100%;
+}
+
+.plyr {
+    width: 100%;
+}

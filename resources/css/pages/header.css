@@ -1,0 +1,29 @@
+.header {
+    background-color: rgba(43, 43, 43, 0.7);
+    width: 100%;
+    position: fixed;
+
+    display: flex;
+}
+
+.header div {
+    margin: 20px 30px;
+}
+
+.header div a {
+    color: whitesmoke;
+
+    font-size: x-large;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 5px solid gold;
+}
+
+.header div a:hover {
+    color: crimson;
+
+    transition: all 0.3s;
+}
