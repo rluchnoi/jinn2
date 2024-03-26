@@ -1,18 +1,16 @@
 import React from 'react';
-import Header from './Header';
+import { useEffect } from 'react';
+import { useState } from 'react';
+
 import Hls from 'hls.js';
 import Plyr from 'plyr';
 import 'plyr/dist/plyr.css';
 
-
-import { useEffect } from 'react';
-
 const Film = ({ film }) => {
-    useEffect(() => {
+    function renderPlayer() {
         const video = document.getElementById('player');
-        const source = film.video;
-
         const defaultOptions = {};
+        const source = film.video;
 
         if (Hls.isSupported()) {
             const hls = new Hls();
@@ -37,7 +35,7 @@ const Film = ({ film }) => {
                 ],
 
                 defaultOptions.quality = {
-                    default: availableQualities[availableQualities.length - 1],
+                    default: availableQualities[0],
                     options: availableQualities,
                     forced: true,
                     onChange: (e) => updateQuality(e)
@@ -50,7 +48,7 @@ const Film = ({ film }) => {
             window.hls = hls;
 
         } else {
-            console.log('Not supported')
+            console.log('Not supported');
         }
 
         function updateQuality(quality) {
@@ -60,18 +58,23 @@ const Film = ({ film }) => {
                 }
             })
         }
+    }
 
-    }, []);
+    useEffect(() => {
+        if (film) {
+            renderPlayer();
+        }
+    }, [film]);
+
+    if (!film) {
+        return <></>
+    }
 
     return (
         <>
-            <Header/>
-
             <div className='film'>
-
                 <div className='firstColumn'>
                     <div className='firstColumnContentWrapper'>
-
                         <div className='filmImage'>
                             <img src={film.image} alt="Not Found"/>
                         </div>
@@ -102,8 +105,6 @@ const Film = ({ film }) => {
                         ></video>
                     </div>
                 </div>
-
-                
             </div>
         </>
     )

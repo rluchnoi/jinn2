@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import Header from '../Common/Header';
 
 const Products = ({ products }) => {
     const listItems = products.map(product => <li>{product}</li>);

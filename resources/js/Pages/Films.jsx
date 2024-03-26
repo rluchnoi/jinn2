@@ -1,17 +1,28 @@
 import React from 'react';
-import Header from './Header';
+import { useState } from 'react';
+
+import Header from '../Common/Header';
+import Film from './Film';
 
 const Films = ({ films }) => {
+    const [film, setFilm] = useState(null);
+
     const url = window.location.href + '/';
-    const listItems = films.map(product => <li><a href={url + product.id}>{product.name}</a></li>);
+    const listItems = films.map(film => 
+        <swiper-slide className="filmItem" onClick={() => setFilm(film)}>
+            <img src={film.image} alt="Image Not Found"></img>
+        </swiper-slide>
+    );
 
     return (
         <>
             <Header tabName="Films"/>
 
-            <div className='films'>
-                <ul>{listItems}</ul>
-            </div>
+            <swiper-container slides-per-view="5" space-between="20" mousewheel-invert="true" navigation="true">
+                {listItems}
+            </swiper-container>
+
+            <Film film={film}/>
         </>
     )
 }

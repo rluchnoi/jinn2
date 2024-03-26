@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Film;
+use Illuminate\Http\Response as HttpResponse;
 use Inertia\Inertia;
 use Inertia\Response;
 
@@ -15,19 +16,19 @@ class FilmController extends Controller
     public function index(): Response
     {
         return Inertia::render('Films', [
-            'films' => Film::all()
+            'films' => Film::with('actors', 'director')->get()
         ]);
     }
 
     /**
-     * Show a film
+     * Get a film data
      */
-    public function show(int $id): Response
+    public function get(int $id): HttpResponse
     {
         $film = Film::with('actors', 'director')->find($id);
 
-        return Inertia::render('Film', [
+        return response([
             'film' => $film
-        ]);
+        ], HttpResponse::HTTP_OK);
     }
 }

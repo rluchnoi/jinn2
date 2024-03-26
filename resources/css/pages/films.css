@@ -1,7 +1,7 @@
 :root {
     --white-main: rgb(200, 200, 200);
     --gray-main: #353535;
-  }
+}
 
 .film {
     background-color: #545454;
@@ -73,6 +73,8 @@
 .secondColumn {
     background-color: var(--gray-main);
     margin: 0px 20px 0px 20px;
+
+    width: 100%;
 }
 
 .filmName {
@@ -93,4 +95,12 @@
 
     display: flex;
     align-items: start;
+}
+
+#player {
+    width: 100%;
+}
+
+.plyr {
+    width: 100%;
 }
