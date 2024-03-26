@@ -18,11 +18,32 @@ const Films = ({ films }) => {
         <>
             <Header tabName="Films"/>
 
-            <swiper-container slides-per-view="5" space-between="20" mousewheel-invert="true" navigation="true">
-                {listItems}
-            </swiper-container>
+            <div className="filmAligner">
+                <div className="filmWrapper">
 
-            <Film film={film}/>
+                    <div className="filmSwiperWrapper">
+                        <div className="nav-btn custom-prev-button">
+                            <img src="/storage/app-images/left-arrow.svg" alt="No Image Found"/>
+                        </div>
+
+                        <swiper-container
+                            slides-per-view="7"
+                            space-between="20"
+                            navigation="true"
+                            navigation-next-el=".custom-next-button"
+                            navigation-prev-el=".custom-prev-button"
+                        >
+                            {listItems}
+                        </swiper-container>
+
+                        <div className="nav-btn custom-next-button">
+                            <img src="/storage/app-images/right-arrow.svg" alt="No Image Found"/>
+                        </div>
+                    </div>
+
+                    <Film film={film}/>
+                </div>
+            </div>
         </>
     )
 }

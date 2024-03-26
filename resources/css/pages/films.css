@@ -1,16 +1,38 @@
 :root {
     --white-main: rgb(200, 200, 200);
     --gray-main: #353535;
+    --black-main: #1f1f1f;
+}
+
+.filmAligner {
+    display: flex;
+    justify-content: center;
+}
+
+.filmWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #545454;
+
+    height: 100%;
+    width: 80%;
+
+    padding: 20px;
+
+    margin: 300px 20px 20px 20px;
 }
 
 .film {
-    background-color: #545454;
     display: flex;
 
     justify-content: center;
     align-items: center;
 
-    height: 100%;
+    background-color: var(--black-main);
+    padding: 20px;
 }
 
 
@@ -18,7 +40,6 @@
 
 
 .firstColumn {
-    margin: 0px 0px 0px 20px;
     background-color: var(--gray-main);
 
     width: 40%;
@@ -26,7 +47,7 @@
 }
 
 .firstColumnContentWrapper {
-    margin: 20px;
+    margin: 10px;
 
     display: flex;
     flex-direction: column;
@@ -35,8 +56,13 @@
     align-items: center;
 }
 
-.firstColumnContentWrapper > *, .secondColumn > * {
-    margin-bottom: 20px;
+.filmName {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bolder;
+
+    margin-bottom: 10px;
 }
 
 .filmImage {
@@ -44,11 +70,12 @@
 
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 20px;
 }
 
 .filmImage img {
     max-width: 100%;
-
     border-radius: 10px;
 }
 
@@ -62,36 +89,26 @@
 }
 
 .filmInfo div:nth-child(2n) {
-    background-color: rgba(20, 20, 20, 0.1);
+    background-color: transparent
 }
 
 .filmInfo div:nth-child(2n+1) {
-    background-color: rgba(120, 120, 120, 0.1);
+    background-color: var(--black-main);
 }
 
 
 .secondColumn {
-    background-color: var(--gray-main);
-    margin: 0px 20px 0px 20px;
-
+    margin-left: 20px;
     width: 100%;
-}
 
-.filmName {
-    text-align: center;
-    color: whitesmoke;
-    font-size: 30px;
-    font-weight: bolder;
-
-    margin-top: 20px;
+    display: flex;
 }
 
 .playerWrapper {
-    margin: 20px;
-
     border-bottom: 5px solid gold;
 
     height: 100%;
+    width: 100%;
 
     display: flex;
     align-items: start;

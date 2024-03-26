@@ -1,6 +1,7 @@
 .header {
-    background-color: gray;
+    background-color: rgba(43, 43, 43, 0.7);
     width: 100%;
+    position: fixed;
 
     display: flex;
 }
@@ -10,7 +11,7 @@
 }
 
 .header div a {
-    color: black;
+    color: whitesmoke;
 
     font-size: x-large;
     font-weight: 700;
@@ -22,7 +23,7 @@
 }
 
 .header div a:hover {
-    color: whitesmoke;
+    color: crimson;
 
     transition: all 0.3s;
 }

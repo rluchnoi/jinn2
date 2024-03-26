@@ -75,6 +75,10 @@ const Film = ({ film }) => {
             <div className='film'>
                 <div className='firstColumn'>
                     <div className='firstColumnContentWrapper'>
+                        <div className='filmName'>
+                            {film.name}
+                        </div>
+
                         <div className='filmImage'>
                             <img src={film.image} alt="Not Found"/>
                         </div>
@@ -94,10 +98,6 @@ const Film = ({ film }) => {
                 </div>
 
                 <div className='secondColumn'>
-                    <div className='filmName'>
-                        {film.name}
-                    </div>
-
                     <div className='playerWrapper'>
                         <video
                             id="player"
