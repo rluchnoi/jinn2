@@ -18,18 +18,10 @@ const Header = ({ tabName }) => {
             </div>
             <div>
                 <a 
-                    className={getClass('Products')} 
-                    href="/products"
+                    className={getClass('Partner')} 
+                    href="/become-a-partner"
                 >
-                    Products
-                </a>
-            </div>
-            <div>
-                <a 
-                    className={getClass('Films')}
-                    href="/films"
-                >
-                    Films
+                    Become a Partner
                 </a>
             </div>
         </header>

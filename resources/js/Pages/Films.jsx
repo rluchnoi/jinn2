@@ -16,7 +16,7 @@ const Films = ({ films }) => {
 
     return (
         <>
-            <Header tabName="Films"/>
+            <Header tabName="Home"/>
 
             <div className="filmAligner">
                 <div className="filmWrapper">

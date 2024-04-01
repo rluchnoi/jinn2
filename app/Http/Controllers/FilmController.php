@@ -19,16 +19,4 @@ class FilmController extends Controller
             'films' => Film::with('actors', 'director')->get()
         ]);
     }
-
-    /**
-     * Get a film data
-     */
-    public function get(int $id): HttpResponse
-    {
-        $film = Film::with('actors', 'director')->find($id);
-
-        return response([
-            'film' => $film
-        ], HttpResponse::HTTP_OK);
-    }
 }
