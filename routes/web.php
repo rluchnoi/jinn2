@@ -1,8 +1,7 @@
 <?php
 
 use App\Http\Controllers\FilmController;
-use App\Http\Controllers\LandingController;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\PartnerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,8 +21,5 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/', [LandingController::class, 'index'])->name('landing');
-Route::get('/products', [ProductController::class, 'index'])->name('products');
-Route::get('/films', [FilmController::class, 'index'])->name('films');
-
-Route::get('/films/{id}', [FilmController::class, 'show'])->name('film');
+Route::get('/become-a-partner', [PartnerController::class, 'index'])->name('partner');
+Route::get('/', [FilmController::class, 'index'])->name('films');
