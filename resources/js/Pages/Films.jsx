@@ -9,7 +9,7 @@ const Films = ({ films }) => {
 
     const url = window.location.href + '/';
     const listItems = films.map(film => 
-        <swiper-slide className="filmItem" onClick={() => setFilm(film)}>
+        <swiper-slide id={film.id} className="filmItem" onClick={() => setFilm(film)}>
             <img src={film.image} alt="Image Not Found"></img>
         </swiper-slide>
     );

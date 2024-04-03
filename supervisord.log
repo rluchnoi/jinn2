@@ -1,0 +1,64 @@
+2024-04-03 14:08:33,646 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-03 14:08:33,646 WARN For [program:nginx], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:08:33,646 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:08:33,646 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:08:33,647 INFO supervisord started with pid 1
+2024-04-03 14:08:34,651 INFO spawned: 'nginx' with pid 7
+2024-04-03 14:08:34,654 INFO spawned: 'php-fpm' with pid 8
+2024-04-03 14:08:34,655 INFO spawned: 'ssr' with pid 9
+2024-04-03 14:08:35,963 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:08:35,963 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:08:35,963 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:10:54,132 WARN received SIGQUIT indicating exit request
+2024-04-03 14:10:54,132 INFO waiting for nginx, php-fpm, ssr to die
+2024-04-03 14:10:55,136 INFO stopped: ssr (exit status 0)
+2024-04-03 14:10:55,139 INFO stopped: php-fpm (exit status 0)
+2024-04-03 14:10:55,140 INFO stopped: nginx (exit status 0)
+2024-04-03 14:11:07,005 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-03 14:11:07,006 WARN For [program:nginx], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:11:07,006 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:11:07,006 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:11:07,007 INFO supervisord started with pid 1
+2024-04-03 14:11:08,011 INFO spawned: 'nginx' with pid 7
+2024-04-03 14:11:08,013 INFO spawned: 'php-fpm' with pid 8
+2024-04-03 14:11:08,014 INFO spawned: 'ssr' with pid 9
+2024-04-03 14:11:09,288 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:11:09,288 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:11:09,288 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:14:52,542 WARN received SIGQUIT indicating exit request
+2024-04-03 14:14:52,543 INFO waiting for nginx, php-fpm, ssr to die
+2024-04-03 14:14:53,548 INFO stopped: ssr (exit status 0)
+2024-04-03 14:14:53,551 INFO stopped: php-fpm (exit status 0)
+2024-04-03 14:14:53,552 INFO stopped: nginx (exit status 0)
+2024-04-03 14:16:39,895 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-03 14:16:39,895 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:16:39,895 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:16:39,896 INFO supervisord started with pid 1
+2024-04-03 14:16:40,898 INFO spawned: 'php-fpm' with pid 7
+2024-04-03 14:16:40,899 INFO spawned: 'ssr' with pid 8
+2024-04-03 14:16:42,173 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:16:42,173 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:17:19,372 WARN received SIGQUIT indicating exit request
+2024-04-03 14:17:19,372 INFO waiting for php-fpm, ssr to die
+2024-04-03 14:17:20,376 INFO stopped: ssr (exit status 0)
+2024-04-03 14:17:20,380 INFO stopped: php-fpm (exit status 0)
+2024-04-03 14:17:28,154 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-03 14:17:28,154 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:17:28,154 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:17:28,155 INFO supervisord started with pid 1
+2024-04-03 14:17:29,159 INFO spawned: 'php-fpm' with pid 7
+2024-04-03 14:17:29,163 INFO spawned: 'ssr' with pid 8
+2024-04-03 14:17:30,436 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:17:30,437 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:19:50,203 WARN received SIGQUIT indicating exit request
+2024-04-03 14:19:50,203 INFO waiting for php-fpm, ssr to die
+2024-04-03 14:19:51,207 INFO stopped: ssr (exit status 0)
+2024-04-03 14:19:51,211 INFO stopped: php-fpm (exit status 0)
+2024-04-03 14:19:59,521 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-03 14:19:59,521 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:19:59,521 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-03 14:19:59,522 INFO supervisord started with pid 1
+2024-04-03 14:20:00,524 INFO spawned: 'php-fpm' with pid 7
+2024-04-03 14:20:00,525 INFO spawned: 'ssr' with pid 8
+2024-04-03 14:20:01,801 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-03 14:20:01,801 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

@@ -1,3 +1,3 @@
 FROM nginx
 
-ADD docker/conf/vhost.conf /etc/nginx/conf.d/default.conf
+ADD docker/nginx/vhost.conf /etc/nginx/conf.d/default.conf

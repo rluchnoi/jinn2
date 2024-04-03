@@ -46,6 +46,7 @@ swiper-slide img {
 
 .nav-btn img {
     height: 50px;
+    min-width: 50px;
 }
 
 .nav-btn.custom-prev-button {
