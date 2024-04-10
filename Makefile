@@ -1,6 +1,5 @@
 DC := docker compose
 FPM := $(DC) exec fpm
-NODE := $(DC) exec node
 ARTISAN := $(FPM) php artisan
 
 env:
@@ -21,17 +20,14 @@ stop:
 down:
 	@$(DC) down
 
-node:
-	@$(NODE) /bin/bash
-
 npm-install:
-	@$(NODE) npm install
+	@$(FPM) npm install
 
 npm-build:
-	@$(NODE) npm run build
+	@$(FPM) npm run build && npm run build --ssr
 
 npm-watch:
-	@$(NODE) npm run watch
+	@$(FPM) npm run build && npm run build --ssr --watch
 
 ssh:
 	@$(FPM) /bin/bash

@@ -1,0 +1,40 @@
+.partnerWrapper {
+    padding-top: 100px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.partner {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.partner h1 {
+    font-size: xxx-large;
+    font-weight: bold;
+    color: red;
+}
+
+.partner h2 {
+    font-size: xxx-large;
+    font-weight: bold;
+    color: rgb(255, 123, 0);
+}
+
+.partner p span {
+    font-size: xx-large;
+    font-weight: bold;
+    color: yellow;
+}
+
+.selected {
+    color: white !important;
+    background-color: red;
+}
+
+.underlined {
+    text-decoration: underline;
+}

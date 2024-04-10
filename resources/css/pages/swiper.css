@@ -46,12 +46,9 @@ swiper-slide img {
 
 .nav-btn img {
     height: 50px;
+    min-width: 50px;
 }
 
-.nav-btn.custom-prev-button {
-    margin: 25px;
-}
-
-.nav-btn.custom-next-button {
-    margin: 25px;
+.nav-btn.custom-prev-button, .nav-btn.custom-next-button {
+    margin: 35px;
 }

@@ -1,0 +1,28 @@
+.dashboardWrapper {
+    padding-top: 100px;
+
+    display: flex;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardPages {
+    display: flex;
+}
+
+.dashboardPage {
+    font-size: x-large;
+    font-weight: bold;
+    color: whitesmoke;
+    text-decoration: underline;
+
+    padding: 20px;
+    margin: 20px;
+}
+
+.logoutForm {
+    margin: 40px;
+}

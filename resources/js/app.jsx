@@ -1,17 +1,25 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import { createInertiaApp } from "@inertiajs/react";
-import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers'
-import { register } from 'swiper/element/bundle';
+import './bootstrap';
+import '../css/app.css';
 
-import 'swiper/css/bundle';
+import { createRoot } from 'react-dom/client';
+import { createInertiaApp } from '@inertiajs/react';
+import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
+
+import { register } from 'swiper/element/bundle';
 
 register();
 
+const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+
 createInertiaApp({
-    // Below you can see that we are going to get all React components from resources/js/Pages folder
-    resolve: (name) => resolvePageComponent(`./Pages/${name}.jsx`,import.meta.glob('./Pages/**/*.jsx')),
+    title: (title) => `${title} - ${appName}`,
+    resolve: (name) => resolvePageComponent(`./Pages/${name}.jsx`, import.meta.glob('./Pages/**/*.jsx')),
     setup({ el, App, props }) {
-        createRoot(el).render(<App {...props} />)
+        const root = createRoot(el);
+
+        root.render(<App {...props} />);
     },
-})
+    progress: {
+        color: '#4B5563',
+    },
+});

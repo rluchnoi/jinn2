@@ -13,6 +13,9 @@ class PartnerController extends Controller
      */
     public function index(): Response
     {
-        return Inertia::render('Partner');
+        return Inertia::render('Partner', [
+            'phone' => '+1 457 475 12 78',
+            'email' => 'jinn2.apply.email@gmail.com'
+        ]);
     }
 }

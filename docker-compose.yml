@@ -1,5 +1,3 @@
-version: '3.3'
-
 services:
     nginx:
         build:
@@ -14,12 +12,9 @@ services:
     fpm:
         build:
             context: .
-            dockerfile: docker/Phpfpm.Dockerfile
+            dockerfile: docker/PhpFpmNode.Dockerfile
         volumes:
             - ./:/var/www/html
-        entrypoint:
-            - /bin/sh
-            - /opt/docker-entrypoint.sh
         extra_hosts:
             - host.docker.internal:host-gateway
         links:
@@ -33,9 +28,3 @@ services:
             MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
             MYSQL_USER: '${DB_USERNAME}'
             MYSQL_PASSWORD: ${DB_PASSWORD}
-    node:
-        image: node:21-bullseye
-        tty: true
-        working_dir: /var/www/html
-        volumes:
-            - ./:/var/www/html

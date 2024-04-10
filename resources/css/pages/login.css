@@ -1,0 +1,13 @@
+.loginWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 300px;
+}
+
+.login {
+    background-color: var(--black-main);
+    padding: 20px;
+}
