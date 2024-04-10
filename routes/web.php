@@ -19,7 +19,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', [FilmController::class, 'index'])->name('home');
-Route::get('/become-a-partner', [PartnerController::class, 'index'])->name('home');
+Route::get('/become-a-partner', [PartnerController::class, 'index'])->name('become-a-partner');
 
 //Route::get('/', function () {
 //    return Inertia::render('Welcome', [

@@ -4,10 +4,9 @@ import { useState } from 'react';
 import Header from '../Common/Header';
 import Film from './Film';
 
-const Films = ({ films }) => {
+const Films = ({ films, auth }) => {
     const [film, setFilm] = useState(null);
 
-    const url = window.location.href + '/';
     const listItems = films.map(film => 
         <swiper-slide id={film.id} className="filmItem" onClick={() => setFilm(film)}>
             <img src={film.image} alt="Image Not Found"></img>
@@ -16,7 +15,7 @@ const Films = ({ films }) => {
 
     return (
         <>
-            <Header tabName="Home"/>
+            <Header tabName="Home" auth={auth}/>
 
             <div className="filmAligner">
                 <div className="filmWrapper">

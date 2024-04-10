@@ -4,6 +4,8 @@
     position: fixed;
 
     display: flex;
+
+    z-index: 1000;
 }
 
 .header div {
