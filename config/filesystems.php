@@ -1,5 +1,12 @@
 <?php
 
+$disksUrlShorts = [
+    'public'     => 'storage',
+    'images'     => '/storage/images',
+    'videos'     => '/storage/videos',
+    'app-images' => '/storage/app-images'
+];
+
 return [
 
     /*
@@ -39,7 +46,8 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url_short' => $disksUrlShorts['public'],
+            'url' => env('APP_URL').$disksUrlShorts['public'],
             'visibility' => 'public',
             'throw' => false,
         ],
@@ -47,7 +55,17 @@ return [
         'images' => [
             'driver' => 'local',
             'root' => storage_path('app/public/images'),
-            'url' => env('APP_URL').'/storage/images',
+            'url_short' => $disksUrlShorts['images'],
+            'url' => env('APP_URL').$disksUrlShorts['images'],
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
+        'videos' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/videos'),
+            'url_short' => $disksUrlShorts['videos'],
+            'url' => env('APP_URL').$disksUrlShorts['videos'],
             'visibility' => 'public',
             'throw' => false,
         ],
@@ -55,7 +73,8 @@ return [
         'app-images' => [
             'driver' => 'local',
             'root' => storage_path('app/public/app-images'),
-            'url' => env('APP_URL').'/storage/app-images',
+            'url_short' => $disksUrlShorts['app-images'],
+            'url' => env('APP_URL').$disksUrlShorts['app-images'],
             'visibility' => 'public',
             'throw' => false,
         ],

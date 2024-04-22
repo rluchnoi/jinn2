@@ -38,6 +38,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::get('/upload-film', [FilmController::class, 'uploadView'])->name('film.upload-view');
+    Route::post('/upload-film', [FilmController::class, 'upload'])->name('film.upload');
 });
 
 require __DIR__.'/auth.php';

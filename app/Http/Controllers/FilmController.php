@@ -3,8 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\FilmUploadRequest;
+use App\Http\Services\FilmFileUploadService;
+use App\Models\Actor;
+use App\Models\Director;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Redirect;
 use App\Models\Film;
-use Illuminate\Http\Response as HttpResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
 use Inertia\Response;
 
@@ -18,5 +26,49 @@ class FilmController extends Controller
         return Inertia::render('Films', [
             'films' => Film::with('actors', 'director')->get()
         ]);
+    }
+
+    /**
+     * Upload film view
+     */
+    public function uploadView(): Response
+    {
+        return Inertia::render('UploadFilm', [
+            'actors'    => Actor::query()
+                                    ->get(['id', 'name'])
+                                    ->map( fn ($tag) => ['value' => $tag->id, 'name' => $tag->name])
+                                    ->toArray(),
+
+            'directors' => Director::query()
+                                    ->get(['id', 'name'])
+                                    ->map( fn ($tag) => ['value' => $tag->id, 'name' => $tag->name])
+                                    ->toArray(),
+        ]);
+    }
+
+    /**
+     * Upload film
+     */
+    public function upload(
+        FilmUploadRequest $request,
+        FilmFileUploadService $fileUploadService
+    ): RedirectResponse
+    {
+        $data = $request->validated();
+
+        $film = new Film();
+        $film->name = $data['name'];
+        $film->year = $data['year'];
+        $film->director_id = $data['director'];
+
+        $fileUploadService->uploadImage($request->file('image'), $film);
+
+        $film->save();
+        $film->actors()->attach($data['actors']);
+
+        // TEST!!!!!!
+        $fileUploadService->uploadVideo($request->file('video'), $film);
+
+        return Redirect::route('film.upload');
     }
 }

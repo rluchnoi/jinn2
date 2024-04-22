@@ -5,10 +5,10 @@ import UpdateProfileInformationForm from './Partials/UpdateProfileInformationFor
 import Header from '@/Common/Header';
 import { Link } from '@inertiajs/react';
 
-export default function Edit({ auth, mustVerifyEmail, status }) {
+export default function Edit({ mustVerifyEmail, status }) {
     return (
         <>
-            <Header tabName="AdminTools" auth={auth}/>
+            <Header tabName="AdminTools"/>
 
             <div className='profileWrapper'>
                 <div className='profile'>

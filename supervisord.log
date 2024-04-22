@@ -369,3 +369,263 @@
 2024-04-10 13:13:10,314 INFO reaped unknown pid 358 (exit status 0)
 2024-04-10 13:15:21,221 INFO reaped unknown pid 401 (exit status 0)
 2024-04-10 13:15:22,223 INFO reaped unknown pid 428 (exit status 0)
+2024-04-11 10:32:43,080 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-11 10:32:43,081 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-11 10:32:43,081 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-11 10:32:43,083 INFO supervisord started with pid 1
+2024-04-11 10:32:44,085 INFO spawned: 'php-fpm' with pid 7
+2024-04-11 10:32:44,086 INFO spawned: 'ssr' with pid 8
+2024-04-11 10:32:45,670 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-11 10:32:45,670 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-11 10:38:22,456 INFO reaped unknown pid 52 (exit status 0)
+2024-04-11 10:38:23,457 INFO reaped unknown pid 78 (exit status 0)
+2024-04-11 10:39:03,145 INFO reaped unknown pid 121 (exit status 0)
+2024-04-11 10:39:04,146 INFO reaped unknown pid 148 (exit status 0)
+2024-04-11 10:39:42,558 INFO reaped unknown pid 191 (exit status 0)
+2024-04-11 10:39:43,365 INFO reaped unknown pid 219 (exit status 0)
+2024-04-11 10:41:44,504 INFO reaped unknown pid 263 (exit status 0)
+2024-04-11 10:41:45,506 INFO reaped unknown pid 289 (exit status 0)
+2024-04-11 10:41:54,515 INFO reaped unknown pid 332 (exit status 0)
+2024-04-11 10:41:55,517 INFO reaped unknown pid 358 (exit status 0)
+2024-04-11 10:42:21,601 INFO reaped unknown pid 401 (exit status 0)
+2024-04-11 10:42:22,602 INFO reaped unknown pid 427 (exit status 0)
+2024-04-11 10:42:40,450 INFO reaped unknown pid 471 (exit status 0)
+2024-04-11 10:42:41,451 INFO reaped unknown pid 497 (exit status 0)
+2024-04-11 10:43:06,998 INFO reaped unknown pid 541 (exit status 0)
+2024-04-11 10:43:08,000 INFO reaped unknown pid 567 (exit status 0)
+2024-04-11 10:43:28,426 INFO reaped unknown pid 610 (exit status 0)
+2024-04-11 10:43:29,427 INFO reaped unknown pid 636 (exit status 0)
+2024-04-11 10:51:01,923 INFO reaped unknown pid 679 (exit status 0)
+2024-04-11 10:51:02,925 INFO reaped unknown pid 705 (exit status 0)
+2024-04-11 10:54:14,072 INFO reaped unknown pid 748 (exit status 0)
+2024-04-11 10:54:15,073 INFO reaped unknown pid 774 (exit status 0)
+2024-04-11 10:54:40,715 INFO reaped unknown pid 817 (exit status 0)
+2024-04-11 10:54:40,715 INFO reaped unknown pid 844 (exit status 0)
+2024-04-11 10:55:22,769 INFO reaped unknown pid 887 (exit status 0)
+2024-04-11 10:55:23,771 INFO reaped unknown pid 913 (exit status 0)
+2024-04-11 10:56:44,360 INFO reaped unknown pid 956 (exit status 0)
+2024-04-11 10:56:45,360 INFO reaped unknown pid 982 (exit status 0)
+2024-04-11 11:18:22,315 INFO reaped unknown pid 1065 (exit status 0)
+2024-04-11 11:18:23,316 INFO reaped unknown pid 1092 (exit status 0)
+2024-04-11 11:35:46,247 INFO reaped unknown pid 1135 (exit status 0)
+2024-04-11 11:35:47,247 INFO reaped unknown pid 1161 (exit status 0)
+2024-04-11 11:36:35,850 INFO reaped unknown pid 1204 (exit status 0)
+2024-04-11 11:36:36,850 INFO reaped unknown pid 1231 (exit status 0)
+2024-04-11 11:47:47,261 INFO reaped unknown pid 1302 (exit status 0)
+2024-04-11 11:47:48,262 INFO reaped unknown pid 1328 (exit status 0)
+2024-04-11 11:50:33,783 INFO reaped unknown pid 1382 (exit status 0)
+2024-04-11 11:50:34,784 INFO reaped unknown pid 1408 (exit status 0)
+2024-04-11 11:51:29,804 INFO reaped unknown pid 1451 (exit status 0)
+2024-04-11 11:51:30,805 INFO reaped unknown pid 1478 (exit status 0)
+2024-04-11 11:52:12,826 INFO reaped unknown pid 1521 (exit status 0)
+2024-04-11 11:52:13,828 INFO reaped unknown pid 1548 (exit status 0)
+2024-04-11 11:53:10,897 INFO reaped unknown pid 1591 (exit status 0)
+2024-04-11 11:53:11,899 INFO reaped unknown pid 1618 (exit status 0)
+2024-04-11 11:54:49,954 INFO reaped unknown pid 1662 (exit status 0)
+2024-04-11 11:54:50,955 INFO reaped unknown pid 1688 (exit status 0)
+2024-04-11 11:55:21,210 INFO reaped unknown pid 1732 (exit status 0)
+2024-04-11 11:55:22,211 INFO reaped unknown pid 1758 (exit status 0)
+2024-04-11 11:55:42,844 INFO reaped unknown pid 1801 (exit status 0)
+2024-04-11 11:55:43,845 INFO reaped unknown pid 1828 (exit status 0)
+2024-04-11 12:03:51,078 INFO reaped unknown pid 1871 (exit status 0)
+2024-04-11 12:03:52,079 INFO reaped unknown pid 1897 (exit status 0)
+2024-04-11 12:05:32,518 INFO reaped unknown pid 1940 (exit status 0)
+2024-04-11 12:05:33,520 INFO reaped unknown pid 1967 (exit status 0)
+2024-04-11 12:06:02,087 INFO reaped unknown pid 2010 (exit status 0)
+2024-04-11 12:06:03,088 INFO reaped unknown pid 2037 (exit status 0)
+2024-04-11 12:14:47,789 INFO reaped unknown pid 2081 (exit status 0)
+2024-04-11 12:14:48,790 INFO reaped unknown pid 2108 (exit status 0)
+2024-04-11 12:15:12,104 INFO reaped unknown pid 2152 (exit status 0)
+2024-04-11 12:15:13,106 INFO reaped unknown pid 2179 (exit status 0)
+2024-04-11 12:19:53,452 INFO reaped unknown pid 2222 (exit status 0)
+2024-04-11 12:19:54,453 INFO reaped unknown pid 2248 (exit status 0)
+2024-04-11 12:23:02,892 INFO reaped unknown pid 2291 (exit status 0)
+2024-04-11 12:23:03,893 INFO reaped unknown pid 2317 (exit status 0)
+2024-04-11 12:27:21,195 INFO reaped unknown pid 2360 (exit status 0)
+2024-04-11 12:27:22,197 INFO reaped unknown pid 2386 (exit status 0)
+2024-04-11 12:28:06,877 INFO reaped unknown pid 2429 (exit status 0)
+2024-04-11 12:28:07,878 INFO reaped unknown pid 2455 (exit status 0)
+2024-04-11 12:28:37,794 INFO reaped unknown pid 2498 (exit status 0)
+2024-04-11 12:28:38,794 INFO reaped unknown pid 2524 (exit status 0)
+2024-04-11 12:29:06,644 INFO reaped unknown pid 2567 (exit status 0)
+2024-04-11 12:29:07,645 INFO reaped unknown pid 2593 (exit status 0)
+2024-04-11 12:29:22,783 INFO reaped unknown pid 2636 (exit status 0)
+2024-04-11 12:29:24,786 INFO reaped unknown pid 2662 (exit status 0)
+2024-04-11 12:33:31,219 INFO reaped unknown pid 2705 (exit status 0)
+2024-04-11 12:33:32,221 INFO reaped unknown pid 2732 (exit status 0)
+2024-04-11 12:37:16,330 INFO reaped unknown pid 2775 (exit status 0)
+2024-04-11 12:37:18,332 INFO reaped unknown pid 2801 (exit status 0)
+2024-04-11 13:12:21,908 INFO reaped unknown pid 2857 (exit status 0)
+2024-04-11 13:12:22,909 INFO reaped unknown pid 2884 (exit status 0)
+2024-04-11 13:20:48,437 INFO reaped unknown pid 2931 (exit status 0)
+2024-04-11 13:20:49,438 INFO reaped unknown pid 2957 (exit status 0)
+2024-04-11 13:30:09,187 WARN received SIGQUIT indicating exit request
+2024-04-11 13:30:09,187 INFO waiting for php-fpm, ssr to die
+2024-04-11 13:30:10,192 INFO stopped: ssr (exit status 0)
+2024-04-11 13:30:10,196 INFO stopped: php-fpm (exit status 0)
+2024-04-12 08:54:36,556 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-12 08:54:36,556 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-12 08:54:36,556 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-12 08:54:36,557 INFO supervisord started with pid 1
+2024-04-12 08:54:37,562 INFO spawned: 'php-fpm' with pid 7
+2024-04-12 08:54:37,566 INFO spawned: 'ssr' with pid 8
+2024-04-12 08:54:39,213 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-12 08:54:39,213 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-12 09:13:19,932 WARN received SIGQUIT indicating exit request
+2024-04-12 09:13:19,933 INFO waiting for php-fpm, ssr to die
+2024-04-12 09:13:20,943 INFO stopped: ssr (exit status 0)
+2024-04-12 09:13:20,946 INFO stopped: php-fpm (exit status 0)
+2024-04-12 10:10:16,104 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-12 10:10:16,104 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-12 10:10:16,104 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-12 10:10:16,106 INFO supervisord started with pid 1
+2024-04-12 10:10:17,110 INFO spawned: 'php-fpm' with pid 7
+2024-04-12 10:10:17,114 INFO spawned: 'ssr' with pid 8
+2024-04-12 10:10:18,718 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-12 10:10:18,718 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-12 10:19:23,660 INFO reaped unknown pid 52 (exit status 0)
+2024-04-12 10:19:24,660 INFO reaped unknown pid 78 (exit status 0)
+2024-04-12 10:29:56,092 INFO reaped unknown pid 123 (exit status 0)
+2024-04-12 10:29:57,093 INFO reaped unknown pid 149 (exit status 0)
+2024-04-12 10:36:08,404 INFO reaped unknown pid 192 (exit status 0)
+2024-04-12 10:36:09,406 INFO reaped unknown pid 218 (exit status 0)
+2024-04-12 11:35:05,217 INFO reaped unknown pid 279 (exit status 0)
+2024-04-12 11:35:06,218 INFO reaped unknown pid 306 (exit status 0)
+2024-04-12 11:39:56,516 WARN received SIGQUIT indicating exit request
+2024-04-12 11:39:56,516 INFO waiting for php-fpm, ssr to die
+2024-04-12 11:39:57,530 INFO stopped: ssr (exit status 0)
+2024-04-12 11:39:57,537 INFO stopped: php-fpm (exit status 0)
+2024-04-12 11:43:38,617 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-12 11:43:38,617 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-12 11:43:38,617 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-12 11:43:38,618 INFO supervisord started with pid 1
+2024-04-12 11:43:39,623 INFO spawned: 'php-fpm' with pid 7
+2024-04-12 11:43:39,625 INFO spawned: 'ssr' with pid 8
+2024-04-12 11:43:40,926 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-12 11:43:40,926 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-12 11:59:22,213 WARN received SIGQUIT indicating exit request
+2024-04-12 11:59:22,213 INFO waiting for php-fpm, ssr to die
+2024-04-12 11:59:23,229 INFO stopped: ssr (exit status 0)
+2024-04-12 11:59:23,240 INFO stopped: php-fpm (exit status 0)
+2024-04-12 12:00:11,283 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-12 12:00:11,283 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-12 12:00:11,283 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-12 12:00:11,284 INFO supervisord started with pid 1
+2024-04-12 12:00:12,288 INFO spawned: 'php-fpm' with pid 7
+2024-04-12 12:00:12,290 INFO spawned: 'ssr' with pid 8
+2024-04-12 12:00:13,569 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-12 12:00:13,569 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-12 12:54:45,494 WARN received SIGQUIT indicating exit request
+2024-04-12 12:54:45,494 INFO waiting for php-fpm, ssr to die
+2024-04-12 12:54:46,511 INFO stopped: ssr (exit status 0)
+2024-04-12 12:54:46,527 INFO stopped: php-fpm (exit status 0)
+2024-04-18 10:47:23,722 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-18 10:47:23,722 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-18 10:47:23,723 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-18 10:47:23,724 INFO supervisord started with pid 1
+2024-04-18 10:47:24,726 INFO spawned: 'php-fpm' with pid 7
+2024-04-18 10:47:24,727 INFO spawned: 'ssr' with pid 8
+2024-04-18 10:47:26,343 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-18 10:47:26,343 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-18 10:48:17,395 WARN received SIGQUIT indicating exit request
+2024-04-18 10:48:17,395 INFO waiting for php-fpm, ssr to die
+2024-04-18 10:48:18,399 INFO stopped: ssr (exit status 0)
+2024-04-18 10:48:18,402 INFO stopped: php-fpm (exit status 0)
+2024-04-18 10:49:31,113 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-18 10:49:31,113 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-18 10:49:31,113 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-18 10:49:31,115 INFO supervisord started with pid 1
+2024-04-18 10:49:32,119 INFO spawned: 'php-fpm' with pid 7
+2024-04-18 10:49:32,122 INFO spawned: 'ssr' with pid 8
+2024-04-18 10:49:33,392 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-18 10:49:33,393 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-18 12:52:42,534 WARN received SIGQUIT indicating exit request
+2024-04-18 12:52:42,535 INFO waiting for php-fpm, ssr to die
+2024-04-18 12:52:43,544 INFO stopped: ssr (exit status 0)
+2024-04-18 12:52:43,553 INFO stopped: php-fpm (exit status 0)
+2024-04-19 09:31:26,139 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-19 09:31:26,139 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-19 09:31:26,139 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-19 09:31:26,141 INFO supervisord started with pid 1
+2024-04-19 09:31:27,143 INFO spawned: 'php-fpm' with pid 7
+2024-04-19 09:31:27,145 INFO spawned: 'ssr' with pid 8
+2024-04-19 09:31:28,735 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-19 09:31:28,735 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-19 10:26:18,835 WARN received SIGQUIT indicating exit request
+2024-04-19 10:26:18,835 INFO waiting for php-fpm, ssr to die
+2024-04-19 10:26:19,851 INFO stopped: ssr (exit status 0)
+2024-04-19 10:26:19,855 INFO stopped: php-fpm (exit status 0)
+2024-04-19 10:28:44,324 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-19 10:28:44,324 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-19 10:28:44,324 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-19 10:28:44,326 INFO supervisord started with pid 1
+2024-04-19 10:28:45,329 INFO spawned: 'php-fpm' with pid 7
+2024-04-19 10:28:45,332 INFO spawned: 'ssr' with pid 8
+2024-04-19 10:28:46,626 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-19 10:28:46,626 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-19 11:31:23,747 WARN received SIGQUIT indicating exit request
+2024-04-19 11:31:23,747 INFO waiting for php-fpm, ssr to die
+2024-04-19 11:31:24,751 INFO stopped: ssr (exit status 0)
+2024-04-19 11:31:24,756 INFO stopped: php-fpm (exit status 0)
+2024-04-22 09:20:28,298 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-22 09:20:28,298 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-22 09:20:28,298 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-22 09:20:28,300 INFO supervisord started with pid 1
+2024-04-22 09:20:29,302 INFO spawned: 'php-fpm' with pid 7
+2024-04-22 09:20:29,303 INFO spawned: 'ssr' with pid 8
+2024-04-22 09:20:30,807 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-22 09:20:30,807 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-22 10:24:44,995 WARN received SIGQUIT indicating exit request
+2024-04-22 10:24:44,995 INFO waiting for php-fpm, ssr to die
+2024-04-22 10:24:46,005 INFO stopped: ssr (exit status 0)
+2024-04-22 10:24:46,019 INFO stopped: php-fpm (exit status 0)
+2024-04-22 10:26:19,460 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-22 10:26:19,460 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-22 10:26:19,460 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-22 10:26:19,460 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-22 10:26:19,460 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-22 10:26:19,460 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-22 10:26:19,460 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-04-22 10:26:19,461 INFO supervisord started with pid 1
+2024-04-22 10:26:20,466 INFO spawned: 'laravel-worker_00' with pid 7
+2024-04-22 10:26:20,469 INFO spawned: 'laravel-worker_01' with pid 8
+2024-04-22 10:26:20,473 INFO spawned: 'laravel-worker_02' with pid 9
+2024-04-22 10:26:20,475 INFO spawned: 'laravel-worker_03' with pid 10
+2024-04-22 10:26:20,476 INFO spawned: 'php-fpm' with pid 11
+2024-04-22 10:26:20,477 INFO spawned: 'ssr' with pid 12
+2024-04-22 10:26:21,767 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-22 10:26:21,768 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-22 10:26:21,768 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-22 10:26:21,768 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-22 10:26:21,768 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-22 10:26:21,768 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-22 10:57:36,350 INFO reaped unknown pid 389 (exit status 0)
+2024-04-22 10:57:38,353 INFO reaped unknown pid 416 (exit status 0)
+2024-04-22 11:01:44,753 INFO reaped unknown pid 459 (exit status 0)
+2024-04-22 11:01:46,756 INFO reaped unknown pid 485 (exit status 0)
+2024-04-22 11:02:27,134 INFO reaped unknown pid 529 (exit status 0)
+2024-04-22 11:02:28,136 INFO reaped unknown pid 555 (exit status 0)
+2024-04-22 11:03:37,737 INFO reaped unknown pid 598 (exit status 0)
+2024-04-22 11:03:38,738 INFO reaped unknown pid 625 (exit status 0)
+2024-04-22 11:05:48,853 INFO reaped unknown pid 668 (exit status 0)
+2024-04-22 11:05:49,854 INFO reaped unknown pid 695 (exit status 0)
+2024-04-22 11:11:09,835 INFO reaped unknown pid 738 (exit status 0)
+2024-04-22 11:11:10,836 INFO reaped unknown pid 765 (exit status 0)
+2024-04-22 11:25:40,597 INFO reaped unknown pid 1125 (exit status 0)
+2024-04-22 11:25:41,599 INFO reaped unknown pid 1152 (exit status 0)
+2024-04-22 11:29:31,627 INFO reaped unknown pid 1196 (exit status 0)
+2024-04-22 11:29:32,628 INFO reaped unknown pid 1223 (exit status 0)
+2024-04-22 11:36:37,252 INFO reaped unknown pid 1584 (exit status 0)
+2024-04-22 11:36:38,253 INFO reaped unknown pid 1610 (exit status 0)
+2024-04-22 11:42:34,471 INFO reaped unknown pid 1653 (exit status 0)
+2024-04-22 11:42:35,473 INFO reaped unknown pid 1679 (exit status 0)
+2024-04-22 11:43:36,614 INFO reaped unknown pid 1930 (exit status 0)
+2024-04-22 11:43:38,617 INFO reaped unknown pid 2064 (exit status 0)
+2024-04-22 11:49:04,419 WARN received SIGQUIT indicating exit request
+2024-04-22 11:49:04,419 INFO waiting for laravel-worker_00, laravel-worker_01, laravel-worker_02, laravel-worker_03, php-fpm, ssr to die
+2024-04-22 11:49:05,425 INFO stopped: ssr (exit status 0)
+2024-04-22 11:49:05,429 INFO stopped: php-fpm (exit status 0)
+2024-04-22 11:49:06,431 INFO stopped: laravel-worker_00 (exit status 0)
+2024-04-22 11:49:06,432 INFO stopped: laravel-worker_01 (exit status 0)
+2024-04-22 11:49:06,432 INFO stopped: laravel-worker_02 (exit status 0)
+2024-04-22 11:49:06,432 INFO stopped: laravel-worker_03 (exit status 0)

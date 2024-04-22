@@ -1,17 +1,22 @@
-.profileWrapper {
+.uploadFilmWrapper {
     padding-top: 100px;
 
     display: flex;
 }
 
-.profile {
+.uploadFilm {
     display: flex;
     flex-direction: column;
 }
 
-.profileActions {
+.uploadFilmActions {
     padding: 20px;
     margin: 20px;
 
     background-color: var(--white-transparent-2);
 }
+
+.uploadFilmRow {
+    display: flex;
+}
+

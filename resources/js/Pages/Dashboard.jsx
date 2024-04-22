@@ -2,7 +2,7 @@ import Header from '../Common/Header';
 import { Link, useForm } from '@inertiajs/react';
 import PrimaryButton from '@/Components/PrimaryButton';
 
-export default function Dashboard({ auth }) {
+export default function Dashboard() {
 
     const { post, processing } = useForm();
 
@@ -14,7 +14,7 @@ export default function Dashboard({ auth }) {
 
     return (
         <>
-            <Header tabName="AdminTools" auth={auth}/>
+            <Header tabName="AdminTools"/>
 
             <div className='dashboardWrapper'>
                 <div className='dashboard'>
@@ -31,7 +31,9 @@ export default function Dashboard({ auth }) {
                         </div>
 
                         <div className="dashboardPage">
-                            <div>Upload Film</div>
+                            <Link href={route('film.upload-view')}>
+                                Upload Film
+                            </Link>
                         </div>
 
                         <form onSubmit={submit} className="logoutForm">

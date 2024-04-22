@@ -8,7 +8,7 @@ import TextInput from '@/Components/TextInput';
 import { Head, Link, useForm } from '@inertiajs/react';
 import Header from '../../Common/Header';
 
-export default function Login({ status, canResetPassword, auth }) {
+export default function Login({ status, canResetPassword }) {
     const { data, setData, post, processing, errors, reset } = useForm({
         email: '',
         password: '',
@@ -29,7 +29,7 @@ export default function Login({ status, canResetPassword, auth }) {
 
     return (
         <>
-            <Header tabName="Login" auth={auth}/>
+            <Header tabName="Login"/>
 
             {status && <div className="mb-4 font-medium text-sm text-green-600">{status}</div>}
 

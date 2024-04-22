@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from '@inertiajs/react';
+import { Link, usePage } from '@inertiajs/react';
 
-const Header = ({ tabName, auth }) => {
+const Header = ({ tabName }) => {
+    const user = usePage().props.auth.user;
 
     const getClass = (name) => {
         return name === tabName ? 'active' : '';
@@ -18,7 +19,7 @@ const Header = ({ tabName, auth }) => {
                 </Link>
             </div>
 
-            {auth.user ? (
+            {user ? (
                 <div>
                     <Link
                         className={getClass('AdminTools')} 
