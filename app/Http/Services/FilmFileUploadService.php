@@ -39,7 +39,13 @@ class FilmFileUploadService
     public function uploadVideo(UploadedFile $video, Film $film)
     {
         $name = Storage::disk('videos')->put('tmp', $video);
+        $user = auth()->user();
 
-        VideoUploadJob::dispatch($name, $film, $this->videoPrefix);
+        VideoUploadJob::dispatch(
+            mp4FileName:   $name, 
+            film:          $film, 
+            storagePrefix: $this->videoPrefix,
+            user:          $user
+        );
     }
 }

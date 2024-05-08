@@ -2,13 +2,16 @@
 
 namespace App\Jobs;
 
+use App\Mail\FilmUploadedMail;
 use App\Models\Film;
+use App\Models\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Symfony\Component\Process\Process;
 use Illuminate\Support\Str;
 use Symfony\Component\Process\Exception\ProcessFailedException;
@@ -27,7 +30,7 @@ class VideoUploadJob implements ShouldQueue
      *
      * @var int
      */
-    public $timeout = 6000;
+    public $timeout = 3600;
 
     /**
      * Constructor
@@ -35,14 +38,23 @@ class VideoUploadJob implements ShouldQueue
     public function __construct(
         private string $mp4FileName, 
         private Film $film, 
-        private string $storagePrefix
-    ){
-    }
+        private string $storagePrefix,
+        private User $user
+    ) {}
 
     /**
      * Execute the job.
      */
     public function handle(): void
+    {
+        $this->performVideoActions();
+        $this->performNotifyActions();
+    }
+
+    /**
+     * Perform video related actions
+     */
+    private function performVideoActions(): void
     {
         $directory = $this->createDirectory();
 
@@ -52,6 +64,14 @@ class VideoUploadJob implements ShouldQueue
 
         $this->film->video = $this->storagePrefix.'/'.$directory.'/index.m3u8';
         $this->film->save();
+    }
+
+    /**
+     * Perform notify actions after upload
+     */
+    private function performNotifyActions(): void
+    {
+        Mail::to($this->user)->send(new FilmUploadedMail($this->film));
     }
 
     /**
@@ -97,6 +117,7 @@ class VideoUploadJob implements ShouldQueue
     {
         $process1 = new Process(['ffmpeg', '-i', "$this->mp4FileName", '-profile:v', 'baseline', '-level', '3.0', '-s', '640x360', '-start_number', '0', '-hls_time', '10', '-hls_list_size', '0', '-f', 'hls', "$directory/360_video.m3u8"]);
         $process1->setWorkingDirectory("/var/www/html/storage/app/public/videos");
+        $process1->setTimeout($this->timeout);
         $process1->run();
 
         if (!$process1->isSuccessful()) {
@@ -105,6 +126,7 @@ class VideoUploadJob implements ShouldQueue
 
         $process2 = new Process(['ffmpeg', '-i', "$this->mp4FileName", '-profile:v', 'baseline', '-level', '3.0', '-s', '1280x720', '-start_number', '0', '-hls_time', '10', '-hls_list_size', '0', '-f', 'hls', "$directory/720_video.m3u8"]);
         $process2->setWorkingDirectory("/var/www/html/storage/app/public/videos");
+        $process2->setTimeout($this->timeout);
         $process2->run();
 
         if (!$process2->isSuccessful()) {
@@ -113,6 +135,7 @@ class VideoUploadJob implements ShouldQueue
 
         $process3 = new Process(['ffmpeg', '-i', "$this->mp4FileName", '-profile:v', 'baseline', '-level', '3.0', '-s', '1920x1080', '-start_number', '0', '-hls_time', '10', '-hls_list_size', '0', '-f', 'hls', "$directory/1080_video.m3u8"]);
         $process3->setWorkingDirectory("/var/www/html/storage/app/public/videos");
+        $process3->setTimeout($this->timeout);
         $process3->run();
 
         if (!$process3->isSuccessful()) {

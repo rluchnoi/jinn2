@@ -10,9 +10,6 @@ use App\Models\Director;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Film;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
 use Inertia\Response;
 
@@ -24,7 +21,9 @@ class FilmController extends Controller
     public function index(): Response
     {
         return Inertia::render('Films', [
-            'films' => Film::with('actors', 'director')->get()
+            'films' => Film::with('actors', 'director')
+                ->where('video', '!=', null)
+                ->get()
         ]);
     }
 

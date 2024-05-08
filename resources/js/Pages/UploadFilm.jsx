@@ -15,18 +15,20 @@ import 'react-select-search/style.css';
 
 export default function UploadFilm({ actors, directors }) {
     const { data, setData, post, errors, processing, wasSuccessful } = useForm();
-    const [modalIsRead, setModalIsRead] = useState(true);
+    const [showModal, setShowModal] = useState(true);
 
     // submit form
     const submit = (e) => {
         e.preventDefault();
 
         post(route('film.upload'));
+
+        setShowModal(true);
     };
 
     // close modal
     const closeModal = () => {
-        setModalIsRead(false);
+        setShowModal(false);
     };
 
     return (
@@ -173,7 +175,7 @@ export default function UploadFilm({ actors, directors }) {
                 </div>
             </div>
 
-            <Modal show={wasSuccessful && modalIsRead}>
+            <Modal show={wasSuccessful && showModal}>
                 <div className="p-6">
                     <h2 className="text-lg font-medium text-gray-900">
                         Data saved successfully
