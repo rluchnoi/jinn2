@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from '../Common/Header';
 
-const Partner = ({ auth, phone, email }) => {
+const Partner = ({ phone, email }) => {
     return (
         <>
-            <Header tabName="Partner" auth={auth}/>
+            <Header tabName="Partner"/>
 
             <div className='partnerWrapper'>
                 <div className='partner'>

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Header from '../Common/Header';
 import Film from './Film';
 
-const Films = ({ films, auth }) => {
+const Films = ({ films }) => {
     const [film, setFilm] = useState(null);
 
     const listItems = films.map(film => 
@@ -15,7 +15,7 @@ const Films = ({ films, auth }) => {
 
     return (
         <>
-            <Header tabName="Home" auth={auth}/>
+            <Header tabName="Home"/>
 
             <div className="filmAligner">
                 <div className="filmWrapper">

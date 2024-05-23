@@ -5,13 +5,13 @@ import UpdateProfileInformationForm from './Partials/UpdateProfileInformationFor
 import Header from '@/Common/Header';
 import { Link } from '@inertiajs/react';
 
-export default function Edit({ auth, mustVerifyEmail, status }) {
+export default function Edit({ mustVerifyEmail, status }) {
     return (
         <>
-            <Header tabName="AdminTools" auth={auth}/>
+            <Header tabName="AdminTools"/>
 
-            <div className='profileWrapper'>
-                <div className='profile'>
+            <div className='paddingTopWrapper'>
+                <div className='flexColumn'>
 
                     <div className="linkBackWrapper">
                         <Link href={route('dashboard')}>
@@ -22,7 +22,7 @@ export default function Edit({ auth, mustVerifyEmail, status }) {
                         </Link>
                     </div>
 
-                    <div className="profileActions">
+                    <div className="greyWrapper">
                         <UpdateProfileInformationForm
                             mustVerifyEmail={mustVerifyEmail}
                             status={status}
@@ -30,11 +30,11 @@ export default function Edit({ auth, mustVerifyEmail, status }) {
                         />
                     </div>
 
-                    <div className="profileActions">
+                    <div className="greyWrapper">
                         <UpdatePasswordForm className="max-w-xl" />
                     </div>
 
-                    <div className="profileActions">
+                    <div className="greyWrapper">
                         <DeleteUserForm className="max-w-xl" />
                     </div>
 

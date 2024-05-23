@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y \
   libfreetype6-dev \
   nodejs \
   npm \
-  supervisor
+  supervisor \
+  ffmpeg
 
 RUN apt-get update \
   && docker-php-ext-install pdo pdo_mysql zip pcntl \

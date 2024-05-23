@@ -1,27 +1,26 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
-use App\Providers\RouteServiceProvider;
-use Illuminate\Auth\Events\Registered;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\Rules;
 use Inertia\Inertia;
 use Inertia\Response;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Http\Request;
+use Illuminate\Validation\Rules;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
-class RegisteredUserController extends Controller
+class UserController extends Controller
 {
     /**
-     * Display the registration view.
+     * Show the Add User view.
      */
-    public function create(): Response
+    public function index(): Response
     {
-        return Inertia::render('Auth/Register');
+        return Inertia::render('AddUser');
     }
 
     /**
@@ -45,8 +44,6 @@ class RegisteredUserController extends Controller
 
         event(new Registered($user));
 
-        Auth::login($user);
-
-        return redirect(RouteServiceProvider::HOME);
+        return Redirect::route('user.add-view');
     }
 }

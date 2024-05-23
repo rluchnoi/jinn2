@@ -49,3 +49,55 @@ body {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+.linkBack {
+    padding: 10px;
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: xx-large;
+    font-weight: bold;
+
+    color: whitesmoke;
+
+    transition: all 0.2s;
+}
+
+.linkBack:hover {
+    border-bottom: 10px solid blueviolet;
+    transition: all 0.5s;
+}
+
+.linkBackWrapper {
+    display: flex;
+    height: 120px;
+}
+
+.linkBack .arrowSmall {
+    margin-right: 5px;
+}
+
+
+.select-search-options {
+    max-height: 170px;
+}
+
+.greyWrapper {
+    padding: 20px;
+    margin: 20px;
+
+    background-color: var(--white-transparent-2);
+}
+
+.paddingTopWrapper {
+    padding-top: 100px;
+
+    display: flex;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
