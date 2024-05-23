@@ -4,7 +4,6 @@ import PrimaryButton from '@/Components/PrimaryButton';
 import FileInput from '@/Components/FileInput';
 import TextInput from '@/Components/TextInput';
 import { Link, useForm } from '@inertiajs/react';
-import { Transition } from '@headlessui/react';
 import SelectSearch from 'react-select-search';
 import Header from '@/Common/Header';
 import Modal from '@/Components/Modal';
@@ -35,8 +34,8 @@ export default function UploadFilm({ actors, directors }) {
         <>
             <Header tabName="AdminTools"/>
 
-            <div className='uploadFilmWrapper'>
-                <div className='uploadFilm'>
+            <div className='paddingTopWrapper'>
+                <div className='flexColumn'>
 
                     <div className="linkBackWrapper">
                         <Link href={route('dashboard')}>
@@ -47,7 +46,7 @@ export default function UploadFilm({ actors, directors }) {
                         </Link>
                     </div>
 
-                    <div className="uploadFilmActions">
+                    <div className="greyWrapper">
 
                         <header>
                             <h2 className="text-lg font-medium text-gray-900">Upload Film</h2>

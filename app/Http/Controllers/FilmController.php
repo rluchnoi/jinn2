@@ -65,9 +65,8 @@ class FilmController extends Controller
         $film->save();
         $film->actors()->attach($data['actors']);
 
-        // TEST!!!!!!
         $fileUploadService->uploadVideo($request->file('video'), $film);
 
-        return Redirect::route('film.upload');
+        return Redirect::route('film.upload-view');
     }
 }

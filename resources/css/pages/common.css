@@ -83,3 +83,21 @@ body {
 .select-search-options {
     max-height: 170px;
 }
+
+.greyWrapper {
+    padding: 20px;
+    margin: 20px;
+
+    background-color: var(--white-transparent-2);
+}
+
+.paddingTopWrapper {
+    padding-top: 100px;
+
+    display: flex;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}

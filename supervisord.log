@@ -878,3 +878,171 @@
 2024-05-08 12:59:13,334 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2024-05-08 12:59:13,334 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2024-05-08 12:59:13,334 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-08 13:19:20,322 WARN received SIGQUIT indicating exit request
+2024-05-08 13:19:20,323 INFO waiting for laravel-worker_00, laravel-worker_01, laravel-worker_02, laravel-worker_03, php-fpm, ssr to die
+2024-05-08 13:19:21,339 INFO stopped: ssr (exit status 0)
+2024-05-08 13:19:21,343 INFO stopped: php-fpm (exit status 0)
+2024-05-08 13:19:21,573 INFO stopped: laravel-worker_00 (exit status 0)
+2024-05-08 13:19:21,573 INFO stopped: laravel-worker_02 (exit status 0)
+2024-05-08 13:19:21,574 INFO stopped: laravel-worker_03 (exit status 0)
+2024-05-08 13:19:22,576 INFO stopped: laravel-worker_01 (exit status 0)
+2024-05-13 09:05:53,822 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-05-13 09:05:53,822 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:05:53,822 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:05:53,822 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:05:53,822 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:05:53,822 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:05:53,822 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:05:53,824 INFO supervisord started with pid 1
+2024-05-13 09:05:54,827 INFO spawned: 'laravel-worker_00' with pid 7
+2024-05-13 09:05:54,828 INFO spawned: 'laravel-worker_01' with pid 8
+2024-05-13 09:05:54,829 INFO spawned: 'laravel-worker_02' with pid 9
+2024-05-13 09:05:54,830 INFO spawned: 'laravel-worker_03' with pid 10
+2024-05-13 09:05:54,831 INFO spawned: 'php-fpm' with pid 11
+2024-05-13 09:05:54,832 INFO spawned: 'ssr' with pid 12
+2024-05-13 09:05:56,385 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:05:56,385 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:05:56,385 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:05:56,385 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:05:56,385 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:05:56,385 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:06:02,629 WARN received SIGQUIT indicating exit request
+2024-05-13 09:06:02,629 INFO waiting for laravel-worker_00, laravel-worker_01, laravel-worker_02, laravel-worker_03, php-fpm, ssr to die
+2024-05-13 09:06:03,638 INFO stopped: ssr (exit status 0)
+2024-05-13 09:06:03,642 INFO stopped: php-fpm (exit status 0)
+2024-05-13 09:06:04,645 INFO stopped: laravel-worker_00 (exit status 0)
+2024-05-13 09:06:04,645 INFO stopped: laravel-worker_01 (exit status 0)
+2024-05-13 09:06:04,645 INFO stopped: laravel-worker_02 (exit status 0)
+2024-05-13 09:06:04,645 INFO stopped: laravel-worker_03 (exit status 0)
+2024-05-13 09:06:37,484 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-05-13 09:06:37,484 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:06:37,484 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:06:37,484 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:06:37,484 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:06:37,484 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:06:37,484 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-13 09:06:37,485 INFO supervisord started with pid 1
+2024-05-13 09:06:38,487 INFO spawned: 'laravel-worker_00' with pid 7
+2024-05-13 09:06:38,488 INFO spawned: 'laravel-worker_01' with pid 8
+2024-05-13 09:06:38,489 INFO spawned: 'laravel-worker_02' with pid 9
+2024-05-13 09:06:38,490 INFO spawned: 'laravel-worker_03' with pid 10
+2024-05-13 09:06:38,491 INFO spawned: 'php-fpm' with pid 11
+2024-05-13 09:06:38,492 INFO spawned: 'ssr' with pid 12
+2024-05-13 09:06:39,810 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:06:39,810 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:06:39,810 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:06:39,810 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:06:39,811 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 09:06:39,811 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-13 10:38:40,100 INFO reaped unknown pid 72 (exit status 0)
+2024-05-13 10:38:41,102 INFO reaped unknown pid 99 (exit status 0)
+2024-05-13 10:40:17,496 INFO reaped unknown pid 142 (exit status 0)
+2024-05-13 10:40:18,497 INFO reaped unknown pid 169 (exit status 0)
+2024-05-13 10:42:44,641 INFO reaped unknown pid 212 (exit status 0)
+2024-05-13 10:42:45,642 INFO reaped unknown pid 238 (exit status 0)
+2024-05-13 10:49:57,024 INFO reaped unknown pid 281 (exit status 0)
+2024-05-13 10:49:58,026 INFO reaped unknown pid 308 (exit status 0)
+2024-05-13 10:53:26,691 INFO reaped unknown pid 351 (exit status 0)
+2024-05-13 10:53:27,693 INFO reaped unknown pid 378 (exit status 0)
+2024-05-13 11:00:13,161 INFO reaped unknown pid 421 (exit status 0)
+2024-05-13 11:00:14,162 INFO reaped unknown pid 447 (exit status 0)
+2024-05-13 11:03:06,876 WARN received SIGQUIT indicating exit request
+2024-05-13 11:03:06,876 INFO waiting for laravel-worker_00, laravel-worker_01, laravel-worker_02, laravel-worker_03, php-fpm, ssr to die
+2024-05-13 11:03:07,886 INFO stopped: ssr (exit status 0)
+2024-05-13 11:03:07,894 INFO stopped: php-fpm (exit status 0)
+2024-05-13 11:03:08,896 INFO stopped: laravel-worker_00 (exit status 0)
+2024-05-13 11:03:08,897 INFO stopped: laravel-worker_01 (exit status 0)
+2024-05-13 11:03:08,897 INFO stopped: laravel-worker_02 (exit status 0)
+2024-05-13 11:03:08,897 INFO stopped: laravel-worker_03 (exit status 0)
+2024-05-15 08:57:40,977 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-05-15 08:57:41,038 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-15 08:57:41,038 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-15 08:57:41,038 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-15 08:57:41,038 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-15 08:57:41,038 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-15 08:57:41,038 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-15 08:57:41,231 INFO supervisord started with pid 1
+2024-05-15 08:57:42,234 INFO spawned: 'laravel-worker_00' with pid 7
+2024-05-15 08:57:42,234 INFO spawned: 'laravel-worker_01' with pid 8
+2024-05-15 08:57:42,235 INFO spawned: 'laravel-worker_02' with pid 9
+2024-05-15 08:57:42,236 INFO spawned: 'laravel-worker_03' with pid 10
+2024-05-15 08:57:42,237 INFO spawned: 'php-fpm' with pid 11
+2024-05-15 08:57:42,237 INFO spawned: 'ssr' with pid 12
+2024-05-15 08:57:43,884 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-15 08:57:43,884 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-15 08:57:43,884 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-15 08:57:43,884 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-15 08:57:43,885 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-15 08:57:43,885 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-15 10:56:47,155 INFO reaped unknown pid 341 (exit status 0)
+2024-05-15 10:56:49,158 INFO reaped unknown pid 367 (exit status 0)
+2024-05-15 10:57:59,561 INFO reaped unknown pid 411 (exit status 0)
+2024-05-15 10:58:01,564 INFO reaped unknown pid 437 (exit status 0)
+2024-05-15 10:58:24,670 INFO reaped unknown pid 480 (exit status 0)
+2024-05-15 10:58:25,672 INFO reaped unknown pid 506 (exit status 0)
+2024-05-15 11:04:32,956 INFO reaped unknown pid 551 (exit status 0)
+2024-05-15 11:04:33,958 INFO reaped unknown pid 577 (exit status 0)
+2024-05-15 11:04:56,708 INFO reaped unknown pid 621 (exit status 0)
+2024-05-15 11:04:57,710 INFO reaped unknown pid 647 (exit status 0)
+2024-05-15 11:06:07,171 INFO reaped unknown pid 690 (exit status 0)
+2024-05-15 11:06:08,172 INFO reaped unknown pid 716 (exit status 0)
+2024-05-15 11:32:52,121 WARN received SIGQUIT indicating exit request
+2024-05-15 11:32:52,121 INFO waiting for laravel-worker_00, laravel-worker_01, laravel-worker_02, laravel-worker_03, php-fpm, ssr to die
+2024-05-15 11:32:53,137 INFO stopped: ssr (exit status 0)
+2024-05-15 11:32:53,146 INFO stopped: php-fpm (exit status 0)
+2024-05-15 11:32:54,150 INFO stopped: laravel-worker_00 (exit status 0)
+2024-05-15 11:32:54,151 INFO stopped: laravel-worker_01 (exit status 0)
+2024-05-15 11:32:54,151 INFO stopped: laravel-worker_02 (exit status 0)
+2024-05-15 11:32:54,151 INFO stopped: laravel-worker_03 (exit status 0)
+2024-05-23 11:17:59,113 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-05-23 11:17:59,114 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:17:59,114 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:17:59,114 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:17:59,114 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:17:59,114 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:17:59,114 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:17:59,116 INFO supervisord started with pid 1
+2024-05-23 11:18:00,121 INFO spawned: 'laravel-worker_00' with pid 7
+2024-05-23 11:18:00,126 INFO spawned: 'laravel-worker_01' with pid 8
+2024-05-23 11:18:00,130 INFO spawned: 'laravel-worker_02' with pid 9
+2024-05-23 11:18:00,134 INFO spawned: 'laravel-worker_03' with pid 10
+2024-05-23 11:18:00,138 INFO spawned: 'php-fpm' with pid 11
+2024-05-23 11:18:00,141 INFO spawned: 'ssr' with pid 12
+2024-05-23 11:18:01,708 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:18:01,708 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:18:01,708 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:18:01,708 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:18:01,709 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:18:01,709 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:18:48,761 WARN received SIGQUIT indicating exit request
+2024-05-23 11:18:48,762 INFO waiting for laravel-worker_00, laravel-worker_01, laravel-worker_02, laravel-worker_03, php-fpm, ssr to die
+2024-05-23 11:18:49,767 INFO stopped: ssr (exit status 0)
+2024-05-23 11:18:49,769 INFO stopped: php-fpm (exit status 0)
+2024-05-23 11:18:50,772 INFO stopped: laravel-worker_00 (exit status 0)
+2024-05-23 11:18:50,772 INFO stopped: laravel-worker_01 (exit status 0)
+2024-05-23 11:18:50,772 INFO stopped: laravel-worker_02 (exit status 0)
+2024-05-23 11:18:50,773 INFO stopped: laravel-worker_03 (exit status 0)
+2024-05-23 11:20:56,838 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-05-23 11:20:56,838 WARN For [program:php-fpm], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:20:56,838 WARN For [program:ssr], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:20:56,838 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:20:56,838 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:20:56,838 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:20:56,838 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-05-23 11:20:56,839 INFO supervisord started with pid 1
+2024-05-23 11:20:57,842 INFO spawned: 'laravel-worker_00' with pid 7
+2024-05-23 11:20:57,844 INFO spawned: 'laravel-worker_01' with pid 8
+2024-05-23 11:20:57,846 INFO spawned: 'laravel-worker_02' with pid 9
+2024-05-23 11:20:57,847 INFO spawned: 'laravel-worker_03' with pid 10
+2024-05-23 11:20:57,848 INFO spawned: 'php-fpm' with pid 11
+2024-05-23 11:20:57,848 INFO spawned: 'ssr' with pid 12
+2024-05-23 11:20:59,212 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:20:59,212 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:20:59,212 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:20:59,212 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:20:59,212 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:20:59,212 INFO success: ssr entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-05-23 11:52:29,772 INFO reaped unknown pid 72 (exit status 0)
+2024-05-23 11:52:30,774 INFO reaped unknown pid 99 (exit status 0)
+2024-05-23 12:11:23,203 INFO reaped unknown pid 150 (exit status 0)
+2024-05-23 12:11:24,204 INFO reaped unknown pid 177 (exit status 0)

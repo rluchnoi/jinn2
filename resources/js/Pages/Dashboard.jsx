@@ -1,8 +1,9 @@
 import Header from '../Common/Header';
-import { Link, useForm } from '@inertiajs/react';
+import { Link, useForm, usePage } from '@inertiajs/react';
 import PrimaryButton from '@/Components/PrimaryButton';
 
 export default function Dashboard() {
+    const isAdmin = usePage().props.auth.user.is_admin;
 
     const { post, processing } = useForm();
 
@@ -26,9 +27,13 @@ export default function Dashboard() {
                             </Link>
                         </div>
 
-                        <div className="dashboardPage">
-                            <div>Add User</div>
-                        </div>
+                        {isAdmin && 
+                            <div className="dashboardPage">
+                                <Link href={route('user.add-view')}>
+                                    Add User
+                                </Link>
+                            </div>
+                        }
 
                         <div className="dashboardPage">
                             <Link href={route('film.upload-view')}>

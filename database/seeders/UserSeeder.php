@@ -16,10 +16,11 @@ class UserSeeder extends Seeder
     {
         $users = [
             [
-                'name' => 'Admin',
-                'email' => 'jinn2.admin@gmail.com',
+                'name'              => 'Admin',
+                'email'             => 'jinn2.admin@gmail.com',
                 'email_verified_at' => Carbon::now(),
-                'password' => Hash::make(config('auth.passwords.admin_password'))
+                'password'          => Hash::make(config('auth.passwords.admin_password')),
+                'role'              => User::ADMIN_ROLE_ID
             ]
         ];
 

@@ -3,7 +3,7 @@
 use App\Http\Controllers\FilmController;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ProfileController;
-use Illuminate\Foundation\Application;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -41,6 +41,11 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/upload-film', [FilmController::class, 'uploadView'])->name('film.upload-view');
     Route::post('/upload-film', [FilmController::class, 'upload'])->name('film.upload');
+});
+
+Route::middleware('admin')->group(function () {
+    Route::get('/add-user', [UserController::class, 'index'])->name('user.add-view');
+    Route::post('/add-user', [UserController::class, 'store'])->name('user.add');
 });
 
 require __DIR__.'/auth.php';

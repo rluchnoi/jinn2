@@ -25,7 +25,7 @@ const Header = ({ tabName }) => {
                         className={getClass('AdminTools')} 
                         href={route('dashboard')}
                     >
-                        Admin Tools
+                        Actions
                     </Link>
                 </div>
             ) : (
